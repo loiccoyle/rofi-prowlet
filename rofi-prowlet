@@ -41,7 +41,7 @@ download() {
 open() {
     # Open the torrent's web page.
     local url
-    url="$(printf "%s" "$1" | jq -r ".Guid//.Details")"
+    url="$(printf "%s" "$1" | jq -r ".infoUrl")"
     if [ "$url" = "null" ]; then
         printf "Could not get link." >&2
     else
@@ -89,27 +89,7 @@ get_torrent_identifier() {
     local json_response
     json_response="$1"
     local identifier
-    identifier="$(printf "%s" "$json_response" | jq -r ".MagnetUri")"
-    if [ "$identifier" = "null" ]; then
-        local link
-        local temp_file_header
-        temp_file_header="$(mktemp)"
-        local temp_file_torrent
-        temp_file_torrent="$(mktemp --suffix='.torrent')"
-        link="$(printf "%s" "$json_response" | jq -r ".Link")"
-
-        # fetch the header and maybe the torrent file
-        curl -s "$link" --output "$temp_file_torrent" -D "$temp_file_header"
-
-        if identifier="$(grep Location "$temp_file_header")"; then
-            identifier=${identifier#"Location: "}
-        elif grep -q 'Content-Type: application/x-bittorrent' "$temp_file_header"; then
-            identifier="$temp_file_torrent"
-        else
-            #fallback to the link
-            identifier="$link"
-        fi
-    fi
+    identifier="$(printf "%s" "$json_response" | jq -r ".downloadUrl")"
     printf "%s" "$identifier"
 }
 
