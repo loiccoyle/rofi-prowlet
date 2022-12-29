@@ -3,7 +3,9 @@
 <a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 <a href="https://aur.archlinux.org/packages/rofi-prowlet-git/"><img src="https://img.shields.io/aur/version/rofi-prowlet-git"></a>
 
-[`rofi`](https://github.com/davatorium/rofi) wrapper for [`prowlet`](https://github.com/loiccoyle/prowlet). Use the [`Prowlarr`](https://github.com/prowlarr/prowlarr) search API to find torrents.
+[`rofi`](https://github.com/davatorium/rofi) wrapper for [`prowlet`](https://github.com/loiccoyle/prowlet), a cli utility to query `Prowlarr`.
+
+> Use the [`Prowlarr`](https://github.com/prowlarr/prowlarr) search API to find torrents.
 
 ![rofi-prowlet](https://i.imgur.com/RudooO4.png)
 
