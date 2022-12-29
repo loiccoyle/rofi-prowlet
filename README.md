@@ -1,7 +1,7 @@
 # rofi-prowlet
 
 <a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-<a href="https://aur.archlinux.org/packages/rofi-cuff-git/"><img src="https://img.shields.io/aur/version/rofi-prowlet-git"></a>
+<a href="https://aur.archlinux.org/packages/rofi-prowlet-git/"><img src="https://img.shields.io/aur/version/rofi-prowlet-git"></a>
 
 [`rofi`](https://github.com/davatorium/rofi) wrapper for [`prowlet`](https://github.com/loiccoyle/prowlet). Use the [`Prowlarr`](https://github.com/prowlarr/prowlarr) search API to find torrents.
 
