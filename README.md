@@ -49,22 +49,21 @@ paru -S rofi-prowlet-git
 $ rofi-prowlet -h
 Use "-" to read the json Prowlarr response from stdin e.g.:
 
-$ cuff search big buck bunny | rofi-cuff -
+$ prowlet search big buck bunny | rofi-prowlet -
 
-Otherwise, rofi-cuff passes any provided options to the main cuff command:
+Otherwise, rofi-prowlet passes any provided options to the prowlet command:
 
 Query the Prowlarr search API from the command line.
 
 Usage:
-    cuff [OPTIONS] {search, config, indexers, categories, open}
+    prowlet [OPTIONS] {search, config, indexers, categories, open}
         -h                        Show this message and exit.
         -r                        Raw output, no coloring.
         -v                        Verbosisty, up to -vv.
-        -s                        Start Prowlarr service if not running.
-        -k                        Stop Prowlarr service before exiting.
-        -u JACKETT_URL            Prowlarr URL.
-        -a API_KEY                Prowlarr API key, will query Prowlarr if not provided.
-        -p PASSWORD               Prowlarr password.
+        -s                        Start prowlarr.service if not running.
+        -k                        Stop prowlarr.service before exiting.
+        -u PROWLARR_URL           Prowlarr URL.
+        -a API_KEY                Prowlarr API key, will query prowlarr if not provided.
 ```
 
 # Contributing
