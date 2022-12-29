@@ -5,7 +5,7 @@
 
 [`rofi`](https://github.com/davatorium/rofi) wrapper for [`prowlet`](https://github.com/loiccoyle/prowlet). Use the [`Prowlarr`](https://github.com/prowlarr/prowlarr) search API to find torrents.
 
-![rofi-prowlet](https://i.imgur.com/Fb2wh45.png)
+![rofi-prowlet](https://i.imgur.com/RudooO4.png)
 
 [See it in action](https://imgur.com/7roVMqQ)
 
