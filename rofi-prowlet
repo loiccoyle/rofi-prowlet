@@ -89,11 +89,14 @@ get_torrent_identifier() {
     local json_response
     json_response="$1"
     local link
-    link="$(printf "%s" "$json_response" | jq -r ".magnetUrl//.downloadUrl")"
-    # fetch the header and maybe the torrent file
     local identifier
+    link="$(printf "%s" "$json_response" | jq -r ".magnetUrl//.downloadUrl")"
     identifier="$(curl -s "$link" -D - | grep "Location")"
     identifier=${identifier#"Location: "}
+    if [ -z "$identifier" ]; then
+        identifier="$(mktemp --suffix=".torrent")"
+        curl -s "$(printf "%s" "$json_response" | jq -r ".downloadUrl")" -o "$identifier"
+    fi
     printf "%s" "$identifier"
 }
 
