@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #
 # Rofi wrapper for prowlet. Use the prowlarr search API to find torrents.
 # Requires prowlet, jq, rofi, webtorrent (optional)
