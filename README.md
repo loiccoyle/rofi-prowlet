@@ -11,7 +11,7 @@
 
 [See it in action](https://imgur.com/7roVMqQ)
 
-# Installation
+## 📦 Installation
 
 ### Dependencies
 
@@ -43,7 +43,7 @@ Using your prefered AUR helper:
 paru -S rofi-prowlet-git
 ```
 
-# Usage
+## 📋 Usage
 
 `rofi-prowlet` is just wrapping [`prowlet`](https://github.com/loiccoyle/prowlet), any options will be passed on to `prowlet`.
 
@@ -68,6 +68,6 @@ Usage:
         -a API_KEY                Prowlarr API key, will query prowlarr if not provided.
 ```
 
-# Contributing
+## 🥳 Contributing
 
 Please feel free to open a PR, especially to add common torrent related actions.
