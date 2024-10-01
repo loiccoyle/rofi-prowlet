@@ -21,13 +21,13 @@ Optional:
 
 - [webtorrent](https://github.com/webtorrent/webtorrent): for torrent streaming.
 
-Of course you'll also need access to a `Prowlarr` server.
+You'll need to have `Prowlarr` running locally or have access to a `Prowlarr` server.
 
 ### Manual
 
 You'll need to git clone this repository and place the script somewhere in your `$PATH`.
 
-```
+```console
 git clone https://github.com/loiccoyle/rofi-prowlet
 cd rofi-prowlet
 cp rofi-prowlet /somewhere/in/your/PATH/
@@ -37,7 +37,7 @@ cp rofi-prowlet /somewhere/in/your/PATH/
 
 Using your prefered AUR helper:
 
-```
+```console
 paru -S rofi-prowlet-git
 ```
 
@@ -45,7 +45,7 @@ paru -S rofi-prowlet-git
 
 `rofi-prowlet` is just wrapping [`prowlet`](https://github.com/loiccoyle/prowlet), any options will be passed on to `prowlet`.
 
-```
+```console
 $ rofi-prowlet -h
 Use "-" to read the json Prowlarr response from stdin e.g.:
 
