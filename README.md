@@ -9,8 +9,6 @@
 
 ![rofi-prowlet](https://i.imgur.com/RudooO4.png)
 
-[See it in action](https://imgur.com/7roVMqQ)
-
 ## 📦 Installation
 
 ### Dependencies
